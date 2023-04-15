@@ -1,0 +1,269 @@
+\chapter{剑指150}
+开始于2023年3月1日\\高昆轮
+\section{第一章 函数极限连续}
+\subsection{考点1 常用函数及常用曲线p4}
+\subsubsection{函数的概念及一些常用函数}
+\begin{enumerate}
+    \item 绝对值函数
+    y=|x|在x=0处连续，但是是不可导的（左导数不等于右导数）
+    $|a_1 \pm a_2 \pm... \pm a_n|\le|a_1|+|a_2|+...+|a_n|$
+    \item 最值函数\\
+    $U=max\{f(x),g(x)\}= \frac{f(x)+g(x)+|f(x)-g(x)|}{2}$\\
+    $V=min\{f(x),g(x)\}= \frac{f(x)+g(x)-|f(x)-g(x)|}{2}$\\
+    $U+V=f(x)+g(x),U-V=|f(x)-g(x)|,U \bullet V=f(x)g(x)$
+    \item 符号函数\\
+    $对任何x，都有\sqrt{x^2}=|x|=xsgn(x)$
+    \item 取整函数\\
+    $[x+n]=[x]+n,其中n是整数,x-1<[x]\le x $
+    \item 幂指函数\\
+   $ u(x)^{v(x)}=e^{v(x)lnu(x)}$
+    \item 狄利克雷函数
+    \item 
+    $有理数无理数$
+\end{enumerate}
+
+
+\section{考点2 函数的几种特性（特别要记忆对这些特性总结的结论）p11}
+
+\section{考点3 极限的定义p14}
+
+\section{考点4 极限的性质p19}
+
+\section{考点5 无穷小与无穷大p20}
+
+\section{考点6 极限的四则运算法则及两个重要极限p25}
+
+\subsection{极限的四则运算法则}
+
+\begin{enumerate}
+    \item 若$\lim f(x)=A (\exists)$，$\lim g(x)=B (\exists)$
+    \begin{enumerate}
+        \item $\lim [f(x)\pm g(x)]=\lim f(x)\pm g(x)=A\pm B$
+    \end{enumerate}
+    \item 若$\lim f(x)$存在，$\lim g(x)$不存在，则$\lim [f(x)\pm g(x)]$必不存在
+    \item 若$\lim f(x)$不存在，$\lim g(x)$不存在，则$\lim [f(x)\pm g(x)]$不一定不存在（可能存在）
+    \item 若$\lim \frac{f(x)}{g(x)}=A$,且$\lim g(x)=0$，则$\lim f(x)=0$ “母为0，推子为0”
+    \item 若$\lim \frac{f(x)}{g(x)}=A\ne 0$,且$\lim f(x)=0$，则$\lim g(x)=0$ “子为0，推母为0”
+\end{enumerate}
+
+\section{考点7 等价代换p29}
+
+\section{考点8 洛必达法则}
+
+\section{考点9 泰勒公式（多项式的高次逼近）p35}
+
+\subsection{泰勒公式}
+\newpage
+\subsubsection{泰勒公式表}
+% \begin{multicols}{2}
+\begin{itemize}
+\item $ \sin x=x-\frac{x^{3}}{3!}+o(x^{3}) $
+\item $ e^{x}=1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+o(x^{3}) $
+\item $ \arcsin x=x+\frac{x^{3}}{3!}+o(x^{3}) $
+\item $ \tan x=x+\frac{x^{3}}{3}+o(x^{3}) $
+\item $ \cos x=1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+o(x^{4}) $
+\item $ ln(1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+o(x^{3}) $
+\item $ \arctan x=x-\frac{x^{3}}{3}+o(x^{3}) $
+\item $ (1+x)^{\alpha}=1+\alpha x+\frac{\alpha (\alpha -1)}{2!}x^{2}+\frac{\alpha (\alpha -1)(\alpha -2)}{3!}x^{3}+o(x^{3}) $
+\item $ ln(x+\sqrt{1+x^2})=x-\frac{1}{6}x^3+\frac{3}{40}x^5+o(x^3) $
+\end{itemize}
+\begin{figure}
+    \centering %表示居中
+    % \includegraphics[height=0.5\paperheight]{./img/taylor-expansions.JPG}
+\end{figure}
+
+
+% \end{multicols}
+
+\subsubsection{用泰勒公式求极限}
+\begin{enumerate}
+\item $ \frac{A}{B} $: 适用于``上下同阶''的原则 \par
+如果分母(或者分子)是$ x $的$ k $此幂, 则应该把分子(或分母)展开到$ x $的$ k $次幂.
+\item $ A-B $: 适用于幂次最低原则 \par
+将$ A, B $分别展开到它们的系数不相等的$ x $的最低次幂为止.
+\end{enumerate}
+
+\section{考点10 幂指函数$u(x)^{v(x)}$的极限p38}
+
+\section{考点11 已知极限反求参数及无穷小阶数的比较p40}
+
+\section{考点12 数列的极限p43}
+
+\section{考点13 函数的连续性与间断点p48}
+
+\section{考点14 闭区间上连续函数的性质p53}
+
+\chapter{一元函数微分学}
+
+\section{考点15 导数定义}
+
+\section{考点16 四则、复合函数、反函数及对数求导法则p62}
+
+\section{考点17 高阶导数p65}
+
+\section{考点18 隐函数及由参数方程所确定的函数的求导法则p67}
+
+\section{考点19 分段函数及绝对值函数求导p70}
+
+\section{考点20 导数的几何、物理意义及相关变化率p75}
+
+\section{考点21 函数的微分p77}
+
+\section{考点22 中值定理p80}
+
+\section{考点23 单调性与极值、最值p91}
+
+\section{考点24 凹凸性与拐点p99}
+
+\section{考点25 渐近线、曲率p102}
+
+\section{考点26 函数图形的描绘p105}
+
+\section{考点27 证明函数或常数不等式p106}
+
+\section{考点28 用导数讨论方程的根p109}
+
+\chapter{一元函数积分学}
+
+\section{考点29 原函数与不定积分的概念、积分公式p114}
+
+\section{考点30 凑微分法求不定积分p117}
+
+\section{考点31 换元法求不定积分p120}
+
+\section{考点32 分布积分法求不定积分p121}
+
+\section{考点33 有理函数的积分p124}
+
+\section{考点34 定积分的定义及性质p125}
+
+\section{考点35 定积分的计算方法及若干技巧p132}
+
+\section{考点36 变限积分函数及其求导原理p140}
+
+\section{考点37 变限积分函数的综合题p145}
+
+\section{考点38 定积分不等式的证明p150}
+
+\section{考点39 定积分与极限的综合题p154}
+
+\section{考点40 反常积分p157}
+
+\section{考点41 平面图形的面积p161}
+
+\section{考点42 空间图形的体积p165}
+
+\section{考点43 平面曲线的弧长p168}
+
+\section{考点44 旋转曲面的侧面积p169}
+
+\section{考点45 定积分的物理应用p170}
+
+\chapter{向量代数与空间解析几何}
+
+\section{考点46 向量及其运算p173}
+
+\section{考点47 平面积空间直线p175}
+
+\section{考点48 曲面及空间曲线p180}
+
+\chapter{多元函数微分学}
+
+\section{考点49 二元函数的极限及连续p185}
+
+\section{考点50 偏导数p188}
+
+\section{考点51 全微分p192}
+
+\section{考点52 复合函数的偏导数与全微分p195}
+
+\section{考点53 隐函数的偏导数及全微分p200}
+
+\section{考点54 极值与最值p203}
+
+\section{考点55 多元函数微分学的几何应用p209}
+
+\section{考点56 方向导数与梯度p212}
+
+\section{考点57 二元函数的二阶泰勒公式p214}
+
+\chapter{多元函数积分学}
+
+\section{考点58 二重积分概念与几何意义p217}
+
+\section{考点59 直角坐标计算二重积分p221}
+
+\section{考点60 极坐标计算二重积分p224}
+
+\section{考点61 换序及换系p227}
+
+\section{考点62 需分区域计算的几种情况p233}
+
+\section{考点63 先一后二法（投影法）与先二后一法（截面法）p236}
+
+\section{考点64 利用球面坐标计算三重积分p240}
+
+\section{考点65 三重积分的性质及换序p241}
+
+\section{考点66 第一类（平面、空间）曲线积分p242}
+
+\section{考点67 第二类平面曲线积分p246}
+
+\section{考点68 第一类曲面积分p253}
+
+\section{考点69 第二类曲面积分p256}
+
+\section{考点70 第二类空间曲线积分的计算p262}
+
+\section{考点71 多元函数积分学的应用及场论初步p264}
+
+\chapter{无穷级数}
+
+\section{考点72 用定义和基本性质判断技术的敛散性p270}
+
+\section{考点73 正项级数敛散性的判别方法p272}
+
+\section{考点74 交错基数敛散性的判别方法p276}
+
+\section{考点75 任意项基数敛散性的判别方法p278}
+
+\section{考点76 收敛发散的证明题p281}
+
+\section{考点77 幂级数的收敛半径及收敛域的求法p282}
+
+\section{考点78 求一般函数项级数的收敛域p286}
+
+\section{考点79 函数展开成幂级数p286}
+
+\section{考点80 幂级数的和函数的求法p290}
+
+\section{考点81 常数项级数的求和p295}
+
+\section{考点82 傅立叶级数p297}
+
+\chapter{常微分方程}
+
+\section{考点83 微分方程的基本概念p301}
+
+\begin{enumerate}
+    \item 微分方程的通解与特解\\
+        不含任意常数的解称为特解\\
+        含独立任意常数个数与微分方程阶数相同的解称为微分方程的通解\\
+        阶数与个数相同
+    \item 线性与非线性微分方程\\
+    看与y有关的次方是几次，若大于等于2次即为非线性
+
+\end{enumerate}
+
+\section{考点84 一阶微分方程p302}
+
+\section{考点85 二阶可降阶的微分方程p307}
+
+\section{考点86 常系数线性微分方程及欧拉方程p308}
+
+\section{考点87 已知方程的解反求方程及进一步研究方程的解p312}
+
+\section{考点88 通过变形改造建立微分方程并求解p318}
+
+\section{考点89 微分方程的应用p323}
+
