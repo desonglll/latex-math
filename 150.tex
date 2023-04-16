@@ -18,8 +18,8 @@
     \pmb{重要公式}$|a_1 \pm a_2 \pm... \pm a_n|\le|a_1|+|a_2|+...+|a_n|$
 
     \item 最值函数\\
-    $U=max\{f(x),g(x)\}= \frac{f(x)+g(x)+|f(x)-g(x)|}{2}$\\
-    $V=min\{f(x),g(x)\}= \frac{f(x)+g(x)-|f(x)-g(x)|}{2}$\\
+    $\displaystyle\hspace{.2em} U=max\{f(x),g(x)\}= \frac{f(x)+g(x)+|f(x)-g(x)|}{2}$\\
+    $\displaystyle\hspace{.2em} V=min\{f(x),g(x)\}= \frac{f(x)+g(x)-|f(x)-g(x)|}{2}$\\
     $U+V=f(x)+g(x),U-V=|f(x)-g(x)|,U \cdot V=f(x)g(x)$
 
     \item 符号函数\\
@@ -39,7 +39,7 @@
     $[x+n]=[x]+n,其中n是整数,x-1<[x]\le x $
     
     \item 幂指函数\\
-    $u(x)^{v(x)}=e^{v(x)lnu(x)}$
+    $\displaystyle\hspace{.2em} u(x)^{v(x)}=e^{v(x)lnu(x)}$
     
     \item 狄利克雷函数
     {
@@ -311,7 +311,7 @@
     \item 一般借助微分方程（第八章）求解
     \item 注意$\lim \limits_{x\to x_0}f(x),f'(x_0),\int_{a}^{b}f(x)dx$等都是一个数
     \item 抓大头\\
-    重要公式$\lim \limits_{n\to \infty}\sqrt{a_1^n+a_2^n+...+a_m^n}=max\{a_1,a_2,...,a_m\}$\\
+    重要公式$\displaystyle\hspace{.2em}\lim \limits_{n\to \infty}\sqrt{a_1^n+a_2^n+...+a_m^n}=max\{a_1,a_2,...,a_m\}$\\
     考点12例六
 
 \end{enumerate}
@@ -444,9 +444,9 @@
 
     \item 笛卡尔叶形线\par
     {
-        $x^3+y^3-3axy=0$或$\left\{ \begin{array}{cl}
-            x=\frac{3at}{1+t^3},\\
-            y=\frac{3at^2}{1+t^3}
+        $  x^3+y^3-3axy=0$或$\left\{ \begin{array}{cl}
+            \displaystyle\hspace{.2em}x=\frac{3at}{1+t^3},\\
+            \displaystyle\hspace{.2em} y=\frac{3at^2}{1+t^3}
         \end{array}\right.$
     }\\
     渐近线$y=x$和$x+y=-a$
@@ -460,15 +460,62 @@
 \begin{enumerate}
     \item 有界无界应在具体区间判断
     \item 有界无界的判定方法\begin{enumerate}
-        \item 
+        \item 用定义
+        \item 用结论\\
+        若$f(x)$在$[a,b]$上连续，则$f(x)$在$[a,b]$上有界\\
+        若$f(x)$在$(a,b)$内连续，且$\lim \limits_{x\to a^+}f(x)$存在，$\lim \limits_{x\to b^-}f(x)$也存在，则$f(x)$在$(a,b)$内有界\\
+        若存在$c\in I$，且$\lim \limits_{x\to c^-}f(x)=\infty$或$\lim \limits_{x\to c^+}f(x)=\infty$，则$f(x)$在区间$I$上无界
     \end{enumerate}
 \end{enumerate}
 
 \subsubsection{单调性}
 
+\begin{enumerate}
+    \item 判定方法\begin{enumerate}
+        \item 用定义
+        \item 用结论\\
+        导数大于（小于）0，$f(x)$单调增加（减少）\\
+        复合函数\underline{同增异减}
+    \end{enumerate}
+\end{enumerate}
+
 \subsubsection{奇偶性}
 
+\begin{enumerate}
+    \item 常见的奇函数\begin{itemize}
+        \item $x, \sin x, \tan x, sgn x$
+        \item $\ln (x+\sqrt[]{1+x^2})$
+        \item $\displaystyle\hspace{.2em}\frac{a^{kx}\pm 1}{a^{kx}\mp 1}$$(a>0$且$a \ne 1, k \ne 0)$
+        \item \underline{$f(x)-f(-x)$}
+    \end{itemize}
+    \item 常见的偶函数\begin{itemize}
+        \item $C, x^2, |x|, \cos x$
+        \item \underline{$f(x)+f(-x)$}
+    \end{itemize}
+    \item 判定方法\begin{enumerate}
+        \item 用定义
+        \item 用结论\\
+        奇$\pm$奇=奇，偶$\pm$偶=偶，奇$\cdot$奇=奇=偶，偶$\cdot$偶=偶，奇$\cdot$偶=奇\\
+        \underline{内偶则偶，内奇看外}，外奇则奇，外偶则偶\\
+        若$f(x)$是\underline{可导}的奇（偶）函数，则$f'(x)$是偶（奇）函数\\
+        若$f(x)$是\underline{连续}的奇（偶）函数，则$\int_{0}^{x}f(t)dt$是偶（奇）函数（下限必须为0）
+    \end{enumerate}
+\end{enumerate}
+
 \subsubsection{周期性}
+
+\begin{enumerate}
+    \item 判定方法\begin{enumerate}
+        \item 用定义
+        \item 用结论\begin{enumerate}
+            \item 若$f(x)$以T为周期，则$f(ax+b)$以$\displaystyle\hspace{.2em}\frac{T}{|a|}$为周期
+            \item 若$g(x)$是周期函数，则复合函数$f[g(x)]$也是周期函数
+            \item 若$f(x)$是以T为周期的可导函数，则$f'(x)$也以T周期函数
+            \item 若$f(x)$是以T为周期的连续函数，则只有在$\displaystyle\hspace{.2em}\int_{0}^{T}f(x)dx=0$时，$\displaystyle\hspace{.2em}\int_{a}^{x}f(t)dt$也以T周期函数
+        \end{enumerate}
+    \end{enumerate}
+    \item 定义域关于原点对称的任一函数必可表示为一个偶函数与一个奇函数之和
+\end{enumerate}
 
 \section{考点3 极限的定义p14}
 
@@ -485,13 +532,13 @@
     \begin{enumerate}
         \item $\lim [f(x)\pm g(x)]=\lim f(x)\pm g(x)=A\pm B$
         \item $\lim [f(x)g(x)]=\lim f(x)\cdot g(x)=A \cdot B$
-        \item $\lim \frac{f(x)}{g(x)}=\frac{\lim f(x)}{\lim g(x)}=\frac{A}{B}(B\ne 0)$
+        \item $\displaystyle\hspace{.2em}\lim \frac{f(x)}{g(x)}=\frac{\lim f(x)}{\lim g(x)}=\frac{A}{B}(B\ne 0)$
     \end{enumerate}
     \item 必须保证$\lim f(x)$和$\lim g(x)$都\pmb{存在}，且运算项数为\pmb{有限项}
     \item 若$\lim f(x)$存在，$\lim g(x)$不存在，则$\lim [f(x)\pm g(x)]$必不存在
     \item 若$\lim f(x)$不存在，$\lim g(x)$不存在，则$\lim [f(x)\pm g(x)]$不一定不存在（可能存在）
-    \item 若$\lim \frac{f(x)}{g(x)}=A$,且$\lim g(x)=0$，则$\lim f(x)=0$ \pmb{“母为0，推子为0”}
-    \item 若$\lim \frac{f(x)}{g(x)}=A\ne 0$,且$\lim f(x)=0$，则$\lim g(x)=0$ \pmb{“子为0，推母为0”}
+    \item 若$\displaystyle\hspace{.2em}\lim \frac{f(x)}{g(x)}=A$,且$\lim g(x)=0$，则$\lim f(x)=0$ \pmb{“母为0，推子为0”}
+    \item 若$\displaystyle\hspace{.2em}\lim \frac{f(x)}{g(x)}=A\ne 0$,且$\lim f(x)=0$，则$\lim g(x)=0$ \pmb{“子为0，推母为0”}
 \end{enumerate}
 
 \subsection{极限的四则运算法则的推广}
@@ -504,8 +551,10 @@
 \subsection{两个重要极限}
 
 \begin{enumerate}
-    \item {$\lim \limits_{x\to 0}\frac{\sin x}{x}=1$\\ 该极限呈现$\frac{0}{0}$型未定式}
-    \item {$\lim \limits_{x\to 0}(1+x)^{\frac{1}{x}}=e$\\ 该极限呈现$\frac{\infty}{\infty}$型未定式}
+    \item {$\displaystyle\hspace{.2em}\lim \limits_{x\to 0}\frac{\sin x}{x}=1$\\
+    该极限呈现$\displaystyle\hspace{.2em}\frac{0}{0}$型未定式}
+    \item {$\displaystyle\hspace{.2em}\lim \limits_{x\to 0}(1+x)^{\frac{1}{x}}=e$\\
+    该极限呈现$\displaystyle\hspace{.2em}\frac{\infty}{\infty}$型未定式}
 \end{enumerate}
 
 \section{考点7 等价代换p29}
@@ -544,15 +593,15 @@
 \subsubsection{泰勒公式表}
 \begin{multicols}{2}
     \begin{itemize}
-    \item $ \sin x=x-\frac{x^{3}}{3!}+o(x^{3}) $
-    \item $ e^{x}=1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+o(x^{3}) $
-    \item $ \arcsin x=x+\frac{x^{3}}{3!}+o(x^{3}) $
-    \item $ \tan x=x+\frac{x^{3}}{3}+o(x^{3}) $
-    \item $ \cos x=1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+o(x^{4}) $
-    \item $ ln(1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+o(x^{3}) $
-    \item $ \arctan x=x-\frac{x^{3}}{3}+o(x^{3}) $
-    \item $ (1+x)^{\alpha}=1+\alpha x+\frac{\alpha (\alpha -1)}{2!}x^{2}+\frac{\alpha (\alpha -1)(\alpha -2)}{3!}x^{3}+o(x^{3}) $
-    \item $ ln(x+\sqrt{1+x^2})=x-\frac{1}{6}x^3+\frac{3}{40}x^5+o(x^3) $
+    \item $ \displaystyle\hspace{.2em}\sin x=x-\frac{x^{3}}{3!}+o(x^{3}) $
+    \item $ \displaystyle\hspace{.2em}e^{x}=1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+o(x^{3}) $
+    \item $ \displaystyle\hspace{.2em}\arcsin x=x+\frac{x^{3}}{3!}+o(x^{3}) $
+    \item $ \displaystyle\hspace{.2em}\tan x=x+\frac{x^{3}}{3}+o(x^{3}) $
+    \item $ \displaystyle\hspace{.2em}\cos x=1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+o(x^{4}) $
+    \item $ \displaystyle\hspace{.2em}ln(1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+o(x^{3}) $
+    \item $ \displaystyle\hspace{.2em}\arctan x=x-\frac{x^{3}}{3}+o(x^{3}) $
+    \item $ \displaystyle\hspace{.2em}(1+x)^{\alpha}=1+\alpha x+\frac{\alpha (\alpha -1)}{2!}x^{2}+\frac{\alpha (\alpha -1)(\alpha -2)}{3!}x^{3}+o(x^{3}) $
+    \item $ \displaystyle\hspace{.2em}ln(x+\sqrt{1+x^2})=x-\frac{1}{6}x^3+\frac{3}{40}x^5+o(x^3) $
     \end{itemize}
 \end{multicols}
 
@@ -616,11 +665,115 @@
 
 \section{考点29 原函数与不定积分的概念、积分公式p114}
 
+\subsubsection{原函数与不定积分的概念}
+
+\begin{enumerate}
+    \item 可积必有界
+    \item 原函数可导，可知原函数必连续（$f(x)$未必连续）
+\end{enumerate}
+
+\subsubsection{不定积分的性质}
+
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\subsubsection{原函数存在定理}
+
+\begin{enumerate}
+    \item 如果$f(x)$在区间I上连续，那么$f(x)$在区间I上必有原函数
+    \item 如果$f(x)$在区间I上有第一类间断点，那么$f(x)$在区间I上必没有原函数
+    \item $f(x)$有第二类间断点（震荡间断点），但是 $f(x)$可能有原函数
+\end{enumerate}
+
+\subsubsection{积分公式}
+
+\begin{multicols}{2}
+    \begin{itemize}
+    \item $ \displaystyle\int_{}\hspace{.2em} x^{a}\mathrm{d}x=\frac{1}{a+1}x^{a+1}+C(a\neq -1) $
+    \item $ \displaystyle\int_{}\hspace{.2em} \frac{1}{x}\mathrm{d}x=\ln |x|+C $
+    \item $ \displaystyle\int_{}\hspace{.2em} a^{x}\mathrm{d}x=\frac{a^{x}}{\ln a}+C(a>0, a\neq 1) $
+    \item $ \displaystyle\int_{}\hspace{.2em}e^{x}\mathrm{d}x=e^{x}+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\sin x \mathrm{d}x=-\cos x+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\cos x \mathrm{d}x=\sin x+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\sec^{2}x \mathrm{d}x=\tan x+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\csc^{2}x \mathrm{d}x=-\cot x+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\sec x\tan x \mathrm{d}x=\sec x+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\csc x\cot x \mathrm{d}x=-\csc x+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\sec x \mathrm{d}x=\ln |\sec x+\tan x|+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\csc x \mathrm{d}x=-\ln|\csc x+\cot x|+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\frac{\mathrm{d}x}{a^{2}+x^{2}}=\frac{1}{a}\arctan \frac{x}{a}+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\frac{\mathrm{d}x}{a^{2}-x^{2}}=\frac{1}{2a}\ln |\frac{a+x}{a-x}|+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\frac{\mathrm{d}x}{\sqrt{a^{2}-x^{2}}}=\arcsin \frac{x}{a}+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\frac{\mathrm{d}x}{\sqrt{x^{2}+a^{2}}}=\ln|x+\sqrt{x^{2}+a^{2}}|+C $
+    \item $ \displaystyle\int_{}\hspace{.2em}\frac{\mathrm{d}x}{\sqrt{x^{2}-a^{2}}}=\ln|x+\sqrt{x^{2}-a^{2}}|+C $
+    \end{itemize}
+\end{multicols}
+
+
 \section{考点30 凑微分法求不定积分p117}
+
+\begin{enumerate}
+    \item 常用的凑微分公式
+        \begin{enumerate}
+        \item $\sin 2xdx=2\sin x\cos xdx=\left\{
+            \begin{array}{cl}
+                2\sin xd(\sin x)=d(\sin^2 x)\\
+                -2\cos x d(\cos x)=-d(\cos^2 x)
+            \end{array}\right.$
+        \item $\cos 2xdx=\frac{1}{2}d(\sin 2x)=d(\cos x\sin x)$
+        \item $\displaystyle\hspace{.2em}(1\pm \frac{1}{x^2})dx=d(x\mp \frac{1}{x})$
+        \item $(1+\ln x)dx=d(x\ln x)$
+    \end{enumerate}
+    \item 对被积函数复杂部分，先求导，再试着凑微分
+\end{enumerate}
+
+\subsubsection{观察法凑微分}
+
+\subsubsection{分子分母同乘（除）一个因子，再凑微分}
+
+\subsubsection{先求导，再凑微分}
+
+\subsubsection{三角函数の凑微分}
+
+对于 $\int_{}^{}f(\sin x,\cos x)dx$型的积分
+
+\begin{enumerate}
+    \item 若 $f(-\sin x,\cos x)=-f(\sin x,\cos x)$，一般凑 $d(\cos x)$
+    \item 若 $f(\sin x,-\cos x)=-f(\sin x,\cos x)$，一般凑 $d(\sin x)$
+    \item 若 $f(-\sin x,-\cos x)=f(\sin x,\cos x)$，一般凑 $d(\tan x)$
+\end{enumerate}
+
+\begin{tcolorbox}
+
+\pmb{重要公式}\\
+
+$\displaystyle\int_{}^{}\hspace{.2em}\frac{3\sin x+\cos x}{\sin x+2\cos x}dx=\int_{}^{}\frac{A(\sin x+2\cos x)'+B(\sin x+2\cos x)}{\sin x+2\cos x}dx$
+
+可以推广到 $\displaystyle\int_{}^{}\hspace{.2em}\frac{C\sin x+D\cos x}{A\sin x+B\cos x}dx$
+
+\end{tcolorbox}
 
 \section{考点31 换元法求不定积分p120}
 
-\section{考点32 分布积分法求不定积分p121}
+\section{考点32 分部积分法求不定积分p121}
+
+\subsubsection{分部积分法}
+设$ u(x) $, $ v(x) $有连续一阶导数, 则:
+\begin{equation*}
+\displaystyle\int_{}\hspace{.2em}u \mathrm{d}v=uv-\displaystyle\int_{}\hspace{.2em}v \mathrm{d}u
+\end{equation*}
+\begin{tcolorbox}
+\begin{enumerate}
+\item 分部积分法常常用于被积函数为\textbf{两类不同函数相乘}时的不定积分
+\item 积分的难易程度: 若函数积分后会简单些则取作$ v $, 若函数微分后会简单些则取作$ u $, 难易程度为$ \ln x, \arcsin x, \arctan x<P_{n}(x)<e^{kx}, \sin ax, \cos ax $, 越往左边越适合作为$ u $.
+\begin{enumerate}
+\item 被积函数是$ P_{n}(x)e^{kx}, P_{n}(x)\sin ax, P_{n}(x)\cos ax $等形式的时候, 一般来说选取$ u=P_{n}(x) $
+\item 被积函数是$ e^{ax}\sin bx, e^{ax}\cos bx $等形式的时候, 一般来说选取两因子中的任意一个
+\item 被积函数是$ P_{n}\ln x, P_{n}(x)\arcsin x, P_{n}(x)\arctan x $等形式的时候, 一般来说选取$ u=\ln x, u=\arcsin x, u=\arctan x $
+\end{enumerate}
+\end{enumerate}
+\end{tcolorbox}
 
 \section{考点33 有理函数的积分p124}
 
