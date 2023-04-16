@@ -1,8 +1,8 @@
-\chapter{剑指150}
+\part{高等数学}
 开始于2023年3月1日\\高昆轮
-\section{第一章 函数极限连续}
-\subsection{考点1 常用函数及常用曲线p4}
-\subsubsection{函数的概念及一些常用函数}
+\chapter{函数极限连续}
+\section{考点1 常用函数及常用曲线p4}
+\subsection{函数的概念及一些常用函数}
 \begin{enumerate}
     \item 绝对值函数\\
     y=|x|在x=0处连续，但是是不可导的（左导数不等于右导数）\par
@@ -54,7 +54,7 @@
     }
 \end{enumerate}
 
-\subsection{反函数、复合函数及初等函数}
+\section{反函数、复合函数及初等函数}
 \begin{enumerate}
     \item 反函数
     \begin{enumerate}
@@ -305,7 +305,7 @@
 
 \end{enumerate}
 
-\subsection{函数表达式的求解}
+\section{函数表达式的求解}
 
 \begin{enumerate}
     \item 一般借助微分方程（第八章）求解
@@ -316,7 +316,7 @@
 
 \end{enumerate}
 
-\subsection{常用曲线（这些曲线在以后会经常碰到）}
+\section{常用曲线（这些曲线在以后会经常碰到）}
 
 \begin{enumerate}
     \item 笛卡尔心形线\\
@@ -455,7 +455,7 @@
 
 \section{考点2 函数的几种特性（特别要记忆对这些特性总结的结论）p11}
 
-\subsubsection{有界性}
+\subsection{有界性}
 
 \begin{enumerate}
     \item 有界无界应在具体区间判断
@@ -468,7 +468,7 @@
     \end{enumerate}
 \end{enumerate}
 
-\subsubsection{单调性}
+\subsection{单调性}
 
 \begin{enumerate}
     \item 判定方法\begin{enumerate}
@@ -479,7 +479,7 @@
     \end{enumerate}
 \end{enumerate}
 
-\subsubsection{奇偶性}
+\subsection{奇偶性}
 
 \begin{enumerate}
     \item 常见的奇函数\begin{itemize}
@@ -502,7 +502,7 @@
     \end{enumerate}
 \end{enumerate}
 
-\subsubsection{周期性}
+\subsection{周期性}
 
 \begin{enumerate}
     \item 判定方法\begin{enumerate}
@@ -525,7 +525,7 @@
 
 \section{考点6 极限的四则运算法则及两个重要极限p25}
 
-\subsection{极限的四则运算法则}
+\section{极限的四则运算法则}
 
 \begin{enumerate}
     \item 若$\lim f(x)=A (\exists)$，$\lim g(x)=B (\exists)$
@@ -541,14 +541,14 @@
     \item 若$\displaystyle\hspace{.2em}\lim \frac{f(x)}{g(x)}=A\ne 0$,且$\lim f(x)=0$，则$\lim g(x)=0$ \pmb{“子为0，推母为0”}
 \end{enumerate}
 
-\subsection{极限的四则运算法则的推广}
+\section{极限的四则运算法则的推广}
 
 \begin{enumerate}
     \item \underline{在加减中存在极限的那部分}可以单独先算
     \item \underline{在乘除法中极限不为0的那部分}可以单独先算
 \end{enumerate}
 
-\subsection{两个重要极限}
+\section{两个重要极限}
 
 \begin{enumerate}
     \item {$\displaystyle\hspace{.2em}\lim \limits_{x\to 0}\frac{\sin x}{x}=1$\\
@@ -559,7 +559,7 @@
 
 \section{考点7 等价代换p29}
 
-\subsubsection{常用的等价无穷小}
+\subsection{常用的等价无穷小}
 
 \begin{multicols}{4}
 \begin{itemize}
@@ -576,7 +576,7 @@
     \end{itemize}
 \end{multicols}
 
-\subsubsection{等价无穷替换原则}
+\subsection{等价无穷替换原则}
 
 凡是在（\pmb{或处理后在}）同一个$\lim$里表现为乘除运算的无穷小都可对其使用等价代换
 
@@ -588,9 +588,9 @@
 
 \section{考点9 泰勒公式（多项式的高次逼近）p35}
 
-\subsection{泰勒公式}
+\section{泰勒公式}
 % \newpage
-\subsubsection{泰勒公式表}
+\subsection{泰勒公式表}
 \begin{multicols}{2}
     \begin{itemize}
     \item $ \displaystyle\hspace{.2em}\sin x=x-\frac{x^{3}}{3!}+o(x^{3}) $
@@ -613,7 +613,7 @@
 
 % \end{multicols}
 
-\subsubsection{用泰勒公式求极限}
+\subsection{用泰勒公式求极限}
 \begin{enumerate}
 \item $ \frac{A}{B} $: 适用于``上下同阶''的原则 \par
 如果分母(或者分子)是$ x $的$ k $此幂, 则应该把分子(或分母)展开到$ x $的$ k $次幂.
@@ -665,20 +665,20 @@
 
 \section{考点29 原函数与不定积分的概念、积分公式p114}
 
-\subsubsection{原函数与不定积分的概念}
+\subsection{原函数与不定积分的概念}
 
 \begin{enumerate}
     \item 可积必有界
     \item 原函数可导，可知原函数必连续（$f(x)$未必连续）
 \end{enumerate}
 
-\subsubsection{不定积分的性质}
+\subsection{不定积分的性质}
 
 \begin{enumerate}
     \item 
 \end{enumerate}
 
-\subsubsection{原函数存在定理}
+\subsection{原函数存在定理}
 
 \begin{enumerate}
     \item 如果$f(x)$在区间I上连续，那么$f(x)$在区间I上必有原函数
@@ -686,7 +686,7 @@
     \item $f(x)$有第二类间断点（震荡间断点），但是 $f(x)$可能有原函数
 \end{enumerate}
 
-\subsubsection{积分公式}
+\subsection{积分公式}
 
 \begin{multicols}{2}
     \begin{itemize}
@@ -728,22 +728,25 @@
     \item 对被积函数复杂部分，先求导，再试着凑微分
 \end{enumerate}
 
-\subsubsection{观察法凑微分}
+\subsection{观察法凑微分}
 
-\subsubsection{分子分母同乘（除）一个因子，再凑微分}
+\subsection{分子分母同乘（除）一个因子，再凑微分}
 
-\subsubsection{先求导，再凑微分}
+\subsection{先求导，再凑微分}
 
-\subsubsection{三角函数の凑微分}
+\subsection{三角函数の凑微分}
 
-对于 $\int_{}^{}f(\sin x,\cos x)dx$型的积分
-
-\begin{enumerate}
-    \item 若 $f(-\sin x,\cos x)=-f(\sin x,\cos x)$，一般凑 $d(\cos x)$
-    \item 若 $f(\sin x,-\cos x)=-f(\sin x,\cos x)$，一般凑 $d(\sin x)$
-    \item 若 $f(-\sin x,-\cos x)=f(\sin x,\cos x)$，一般凑 $d(\tan x)$
-\end{enumerate}
-
+\begin{tcolorbox}
+    
+    对于 $\int_{}^{}f(\sin x,\cos x)dx$型的积分
+    
+    \begin{enumerate}
+        \item 若 $f(-\sin x,\cos x)=-f(\sin x,\cos x)$，一般凑 $d(\cos x)$
+        \item 若 $f(\sin x,-\cos x)=-f(\sin x,\cos x)$，一般凑 $d(\sin x)$
+        \item 若 $f(-\sin x,-\cos x)=f(\sin x,\cos x)$，一般凑 $d(\tan x)$
+    \end{enumerate}
+\end{tcolorbox}
+    
 \begin{tcolorbox}
 
 \pmb{重要公式}\\
@@ -756,9 +759,40 @@ $\displaystyle\int_{}^{}\hspace{.2em}\frac{3\sin x+\cos x}{\sin x+2\cos x}dx=\in
 
 \section{考点31 换元法求不定积分p120}
 
+\subsection{第一类换元法(凑微分法)}
+若$ \displaystyle\int_{}\hspace{.2em}f(u)\mathrm{d}u=F(u)+C $, 且$ \varphi(x) $可导, 则:
+\begin{equation*}
+\displaystyle\int_{}\hspace{.2em}f(\varphi(x))\varphi'(x)\mathrm{d}x=\displaystyle\int_{}\hspace{.2em}f(\varphi(x))\mathrm{d}\varphi(x)=F(\varphi(x))+C
+\end{equation*}
+\subsection{第二类换元法}
+设函数$ x=\varphi(t) $可导, 且$ \varphi'(t)\neq 0 $, 又设$ \displaystyle\int_{}\hspace{.2em}f(\varphi(t))\varphi'(t)\mathrm{d}t=F(t)+C $, 则:
+\begin{equation*}
+\displaystyle\int_{}\hspace{.2em}f(x)\mathrm{d}x=\displaystyle\int_{}\hspace{.2em}f(\varphi(t))\varphi'(t)\mathrm{d}t=F(\varphi^{-1}(x))+C
+\end{equation*}
+\begin{tcolorbox}
+三种常用的变量代换:
+\begin{enumerate}
+\item 被积函数中含有$ \sqrt{a^{2}-x^{2}} $时, 令$ x=a\sin t $, 或者是$ x=a\cos t $
+\item 被积函数中含有$ \sqrt{x^{2}+a^{2}} $时, 令$ x=a\tan t $
+\item 被积函数中含有$ \sqrt{x^{2}-a^{2}} $时, 令$ x=a\sec t $
+\end{enumerate}
+\end{tcolorbox}
+
+\subsection{根式代换}
+
+当被积函数含有 $\sqrt[n]{ax+b},\displaystyle\hspace{.2em}\sqrt[n]{\frac{ax+b}{cx+d}}$等时，一般可直接令 $\sqrt[n]{ax+b}=t,\displaystyle\hspace{.2em}\sqrt[n]{\frac{ax+b}{cx+d}}=t$
+
+\subsection{指数代换}
+
+当被积函数含有 $a^x,e^x$时，可考虑令 $a^x=t,e^x=t$
+
+\subsection{倒代换}
+
+当被积函数分母的幂次比分子的幂次高两次及以上时，可考虑作倒代换 $x=\frac{1}{t}$
+
 \section{考点32 分部积分法求不定积分p121}
 
-\subsubsection{分部积分法}
+\subsection{分部积分法}
 设$ u(x) $, $ v(x) $有连续一阶导数, 则:
 \begin{equation*}
 \displaystyle\int_{}\hspace{.2em}u \mathrm{d}v=uv-\displaystyle\int_{}\hspace{.2em}v \mathrm{d}u
