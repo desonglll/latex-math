@@ -310,9 +310,12 @@
 \begin{enumerate}
     \item 一般借助微分方程（第八章）求解
     \item 注意$\lim \limits_{x\to x_0}f(x),f'(x_0),\int_{a}^{b}f(x)dx$等都是一个数
-    \item 抓大头\\
-    重要公式$\displaystyle\hspace{.2em}\lim \limits_{n\to \infty}\sqrt{a_1^n+a_2^n+...+a_m^n}=max\{a_1,a_2,...,a_m\}$\\
-    考点12例六
+    \item 抓大头
+    \begin{tcolorbox}
+        \pmb{重要公式}\newline
+        $\displaystyle\hspace{.2em}\lim \limits_{n\to \infty}\sqrt{a_1^n+a_2^n+...+a_m^n}=max\{a_1,a_2,...,a_m\}$\\
+        考点12例六
+    \end{tcolorbox}
 
 \end{enumerate}
 
@@ -497,6 +500,7 @@
         \item 用结论\\
         奇$\pm$奇=奇，偶$\pm$偶=偶，奇$\cdot$奇=奇=偶，偶$\cdot$偶=偶，奇$\cdot$偶=奇\\
         \underline{内偶则偶，内奇看外}，外奇则奇，外偶则偶\\
+        
         若$f(x)$是\underline{可导}的奇（偶）函数，则$f'(x)$是偶（奇）函数\\
         若$f(x)$是\underline{连续}的奇（偶）函数，则$\int_{0}^{x}f(t)dt$是偶（奇）函数（下限必须为0）
     \end{enumerate}
@@ -621,7 +625,7 @@
 将$ A, B $分别展开到它们的系数不相等的$ x $的最低次幂为止.
 \end{enumerate}
 
-\section{考点10 幂指函数$u(x)^{v(x)}$的极限p38}
+\section{考点10 幂指函数\texorpdfstring{$u(x)^{v(x)}$}{} 的极限p38}
 
 \section{考点11 已知极限反求参数及无穷小阶数的比较p40}
 
@@ -629,9 +633,50 @@
 
 \subsection{先求和（积）再求极限}
 
-$\displaystyle\hspace{.2em}\sum_{k=1}^{n}k=\frac{1}{2}n(n+1)$
+\begin{tcolorbox}
+    \pmb{重要公式}\newline
+    \bigskip
+    $\displaystyle\hspace{.2em}\sum_{k=1}^{n}k=\frac{1}{2}n(n+1)$\newline
+    % \bigskip
+    $\displaystyle\hspace{.2em}\sum_{k=1}^{n}n^2=\frac{1}{6}n(n+1)(n+2)$
+    
+\end{tcolorbox}
 
-$\sum_{k=1}^{n}n^2=\frac{1}{6}n(n+1)(n+2)$
+\subsection{夹逼准则}
+
+\paragraph{走投无路时，柳暗花明}
+
+把握放缩的度
+
+\begin{enumerate}
+    \item 利用简单的放大与缩小
+    \item 重要不等式\begin{tcolorbox}
+        $\displaystyle\hspace{.2em}\sin x<x<\tan x,(0<x<\frac{\pi}{2})$\\
+        $\displaystyle\hspace{.2em}\frac{x}{1+x}<\ln (1+x)<x$\\
+        $\displaystyle\hspace{.2em}\arctan x\le x\le \arcsin x,0\le x\le 1$\\
+        $\displaystyle\hspace{.2em}e^x\ge x+1,\forall A$\\
+        $\ln x\le x-1,x>0$\\
+        $x-1<[x]\le x$
+    \end{tcolorbox}
+\end{enumerate}
+
+\begin{tcolorbox}
+    \pmb{重要公式}\newline
+    $\displaystyle\hspace{.2em}\lim \limits_{n\to \infty}\sqrt{a_1^n+a_2^n+...+a_m^n}=max\{a_1,a_2,...,a_m\}$\\
+    考点12例六
+\end{tcolorbox}
+
+\subsubsection{单调有界准则}
+
+\paragraph{利用结论证明梳理单调性}
+\subparagraph{}
+若 $f'(x)>0,x\in I$则数列 ${x_n}$单调，且$\left\{\begin{array}{cl}
+    $当$x_2>x_1$时，数列${x_n}$单调增$\\
+    $当$x_2<x_1$时，数列${x_n}$单调减$
+\end{array}.\right.$
+
+若 $f'(x)<0,x\in I$则数列 ${x_n}$不单调
+
 
 \section{考点13 函数的连续性与间断点p48}
 
@@ -808,14 +853,14 @@ $\displaystyle\int_{}^{}\hspace{.2em}\frac{3\sin x+\cos x}{\sin x+2\cos x}dx=\in
 
         \item 分部积分法常常用于被积函数为\textbf{两类不同函数相乘}时的不定积分
 
-        \item 积分的难易程度: 若函数积分后会简单些则取作$ v $, 若函数微分后会简单些则取作$ u $, 难易程度为$ \ln x, \arcsin x, \arctan x<P_{n}(x)<e^{kx}, \sin ax, \cos ax $, 越往左边越适合作为$ u $.
+        \item 积分的难易程度: 若函数积分后会简单些则取作$ v $, 若函数微分后会简单些则取作$ u $, \\难易程度为$ \ln x, \arcsin x, \arctan x<P_{n}(x)<e^{kx}, \sin ax, \cos ax $, 越往左边越适合作为$ u $.
 
             \begin{enumerate}
                 \item 被积函数是$ P_{n}(x)e^{kx}, P_{n}(x)\sin ax, P_{n}(x)\cos ax $等形式的时候, 一般来说选取$ u=P_{n}(x) $
                 
                 \item 被积函数是$ e^{ax}\sin bx, e^{ax}\cos bx $等形式的时候, 一般来说选取两因子中的任意一个
                 
-                \item 被积函数是$ P_{n}\ln x, P_{n}(x)\arcsin x, P_{n}(x)\arctan x $等形式的时候, 一般来说选取$ u=\ln x, u=\arcsin x, u=\arctan x $
+                \item 被积函数是$ P_{n}\ln x, P_{n}(x)\arcsin x, P_{n}(x)\arctan x $等形式的时候,\\ 一般来说选取$ u=\ln x, u=\arcsin x, u=\arctan x $
             
             \end{enumerate}
     \end{enumerate}
