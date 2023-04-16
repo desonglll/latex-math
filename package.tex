@@ -88,7 +88,8 @@ frame=lrtb,
 \usepackage{lastpage}
 % 页眉页脚
 \usepackage{fancyhdr}
-\fancypagestyle{preContent}{
+% 导入pagestyle
+\fancypagestyle{mystyle}{
     \pagestyle{fancy}                   % 设置页眉页脚
     \fancyhead[OR]{\small\rightmark}                 
     \fancyhead[OL]{}           %页眉中
@@ -108,4 +109,3 @@ frame=lrtb,
     \setlength{\headsep}{5mm}
     \setlength{\footskip}{10mm}
 }
-\pagestyle{preContent}
