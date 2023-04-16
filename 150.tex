@@ -1,5 +1,11 @@
 \part{高等数学}
-开始于2023年3月1日\\高昆轮
+
+% \newcounter{counter1}
+% \addtocounter{counter1}{1}
+% \renewcommand{\thesubsection}{\arabic{section}}
+% \setcounter{counter1}{}
+
+开始于2023年3月1日\\高昆轮\\
 林德松
 
 \chapter*{常用基础知识}
@@ -124,6 +130,7 @@
 \item $ \frac{1}{1+x}<\ln (1+\frac{1}{x})<\frac{1}{x}(x>0) $
 \end{enumerate}
 
+
 \chapter{函数极限连续}
 \section{考点1 常用函数及常用曲线p4}
 \subsection{函数的概念及一些常用函数}
@@ -203,7 +210,7 @@
 
 
 
-\section{反函数、复合函数及初等函数}
+\subsection{反函数、复合函数及初等函数}
 \begin{enumerate}
     \item 反函数
     \begin{enumerate}
@@ -454,7 +461,7 @@
 
 \end{enumerate}
 
-\section{函数表达式的求解}
+\subsection{函数表达式的求解}
 
 \begin{enumerate}
     \item 一般借助微分方程（第八章）求解
@@ -468,7 +475,7 @@
 
 \end{enumerate}
 
-\section{常用曲线（这些曲线在以后会经常碰到）}
+\subsection{常用曲线（这些曲线在以后会经常碰到）}
 
 \begin{enumerate}
     \item 笛卡尔心形线\\
@@ -678,7 +685,7 @@
 
 \section{考点6 极限的四则运算法则及两个重要极限p25}
 
-\section{极限的四则运算法则}
+\subsection{极限的四则运算法则}
 
 \begin{enumerate}
     \item 若$\lim f(x)=A (\exists)$，$\lim g(x)=B (\exists)$
@@ -694,14 +701,14 @@
     \item 若$\displaystyle\hspace{.2em}\lim \frac{f(x)}{g(x)}=A\ne 0$,且$\lim f(x)=0$，则$\lim g(x)=0$ \pmb{“子为0，推母为0”}
 \end{enumerate}
 
-\section{极限的四则运算法则的推广}
+\subsection{极限的四则运算法则的推广}
 
 \begin{enumerate}
     \item \underline{在加减中存在极限的那部分}可以单独先算
     \item \underline{在乘除法中极限不为0的那部分}可以单独先算
 \end{enumerate}
 
-\section{两个重要极限}
+\subsection{两个重要极限}
 
 \begin{enumerate}
     \item {$\displaystyle\hspace{.2em}\lim \limits_{x\to 0}\frac{\sin x}{x}=1$\\
@@ -828,6 +835,48 @@
 
 
 \section{考点13 函数的连续性与间断点p48}
+
+\subsection{函数的连续性}
+\subsubsection{连续的定义}
+\subparagraph{}
+设函数$ f(x) $在点$ x_{0} $的某一邻域内有定义, 且有$ \lim\limits_{x\rightarrow x_{0}}f(x)=f(x_{0}) $, 则称函数$ f(x) $在点$ x_{0} $处连续.
+\subsubsection{左连续和右连续}
+\begin{enumerate}
+\item 左连续: $ \lim\limits_{x \rightarrow x_{0}^{-}}f(x)=f(x_{0}) $
+\item 右连续: $ \lim\limits_{x \rightarrow x_{0}^{+}}f(x)=f(x_{0}) $
+\end{enumerate}
+\subsubsection{充要条件}
+极限存在(左极限=右极限)且等于函数在这个点的函数值:
+\begin{equation*}
+\lim\limits_{x \rightarrow x_{0}^{-}}f(x)=\lim\limits_{x \rightarrow x_{0}^{+}}f(x)=f(x_{0})
+\end{equation*}
+
+\subsection{函数的间断点及分类}
+\paragraph{只有\underline{无定义点及分段点}才可能成为间断点}
+\begin{enumerate}
+    \item 第一类间断点: 左极限和右极限都存在
+    \begin{enumerate}
+        \item 可去间断点(左极限$ = $右极限$ \neq $函数值): $ \lim\limits_{x\rightarrow x_{0}}f(x)=A\neq f(x_{0}) $
+        \begin{tcolorbox}
+            可通过补充定义使可去间断点连续
+        \end{tcolorbox}
+        \item 跳跃间断点(左极限$ \neq $右极限): $ \lim\limits_{x\rightarrow x_{0}^{-}}f(x) \neq \lim\limits_{x\rightarrow x_{0}^{+}}f(x) $
+    \end{enumerate}
+    \item 第二类间断点: 左极限和右极限至少有一个不存在
+    \begin{enumerate}
+        \item 无穷间断点: $ \lim\limits_{x\rightarrow x_{0}}f(x)=\infty $
+        \item 振荡间断点: $ \lim\limits_{x\rightarrow x_{0}}f(x) $振荡不存在
+    \end{enumerate}
+\end{enumerate}
+\subsection{连续的性质}
+\begin{enumerate}
+    \item 连续函数的和, 差, 积, 商(分母不为0)及复合仍连续
+    \item 基本初等函数在其定义域内连续, 初等函数在其定义区间内连续
+    \item 有界性
+    \item 最值性
+    \item 介值性
+    \item 零点定理
+\end{enumerate}
 
 \section{考点14 闭区间上连续函数的性质p53}
 
