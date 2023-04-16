@@ -588,9 +588,9 @@
 
 \section{考点9 泰勒公式（多项式的高次逼近）p35}
 
-\section{泰勒公式}
+\subsection{泰勒公式}
 % \newpage
-\subsection{泰勒公式表}
+\subsubsection{泰勒公式表}
 \begin{multicols}{2}
     \begin{itemize}
     \item $ \displaystyle\hspace{.2em}\sin x=x-\frac{x^{3}}{3!}+o(x^{3}) $
@@ -626,6 +626,12 @@
 \section{考点11 已知极限反求参数及无穷小阶数的比较p40}
 
 \section{考点12 数列的极限p43}
+
+\subsection{先求和（积）再求极限}
+
+$\displaystyle\hspace{.2em}\sum_{k=1}^{n}k=\frac{1}{2}n(n+1)$
+
+$\sum_{k=1}^{n}n^2=\frac{1}{6}n(n+1)(n+2)$
 
 \section{考点13 函数的连续性与间断点p48}
 
@@ -749,7 +755,7 @@
     
 \begin{tcolorbox}
 
-\pmb{重要公式}\\
+\pmb{重要公式}
 
 $\displaystyle\int_{}^{}\hspace{.2em}\frac{3\sin x+\cos x}{\sin x+2\cos x}dx=\int_{}^{}\frac{A(\sin x+2\cos x)'+B(\sin x+2\cos x)}{\sin x+2\cos x}dx$
 
@@ -798,15 +804,21 @@ $\displaystyle\int_{}^{}\hspace{.2em}\frac{3\sin x+\cos x}{\sin x+2\cos x}dx=\in
 \displaystyle\int_{}\hspace{.2em}u \mathrm{d}v=uv-\displaystyle\int_{}\hspace{.2em}v \mathrm{d}u
 \end{equation*}
 \begin{tcolorbox}
-\begin{enumerate}
-\item 分部积分法常常用于被积函数为\textbf{两类不同函数相乘}时的不定积分
-\item 积分的难易程度: 若函数积分后会简单些则取作$ v $, 若函数微分后会简单些则取作$ u $, 难易程度为$ \ln x, \arcsin x, \arctan x<P_{n}(x)<e^{kx}, \sin ax, \cos ax $, 越往左边越适合作为$ u $.
-\begin{enumerate}
-\item 被积函数是$ P_{n}(x)e^{kx}, P_{n}(x)\sin ax, P_{n}(x)\cos ax $等形式的时候, 一般来说选取$ u=P_{n}(x) $
-\item 被积函数是$ e^{ax}\sin bx, e^{ax}\cos bx $等形式的时候, 一般来说选取两因子中的任意一个
-\item 被积函数是$ P_{n}\ln x, P_{n}(x)\arcsin x, P_{n}(x)\arctan x $等形式的时候, 一般来说选取$ u=\ln x, u=\arcsin x, u=\arctan x $
-\end{enumerate}
-\end{enumerate}
+    \begin{enumerate}
+
+        \item 分部积分法常常用于被积函数为\textbf{两类不同函数相乘}时的不定积分
+
+        \item 积分的难易程度: 若函数积分后会简单些则取作$ v $, 若函数微分后会简单些则取作$ u $, 难易程度为$ \ln x, \arcsin x, \arctan x<P_{n}(x)<e^{kx}, \sin ax, \cos ax $, 越往左边越适合作为$ u $.
+
+            \begin{enumerate}
+                \item 被积函数是$ P_{n}(x)e^{kx}, P_{n}(x)\sin ax, P_{n}(x)\cos ax $等形式的时候, 一般来说选取$ u=P_{n}(x) $
+                
+                \item 被积函数是$ e^{ax}\sin bx, e^{ax}\cos bx $等形式的时候, 一般来说选取两因子中的任意一个
+                
+                \item 被积函数是$ P_{n}\ln x, P_{n}(x)\arcsin x, P_{n}(x)\arctan x $等形式的时候, 一般来说选取$ u=\ln x, u=\arcsin x, u=\arctan x $
+            
+            \end{enumerate}
+    \end{enumerate}
 \end{tcolorbox}
 
 \section{考点33 有理函数的积分p124}
